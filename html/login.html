@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport"/>
+  <title>
+   ورود - کارگزاری مفید
+  </title>
+  <!--Favicon-->
+  <link href="/images/logo/favicon.ico" rel="icon"/>
+  <meta content="v3 build 1.0.0.0" name="version"/>
+  <link href="/fonts/iranSans2/css/fontiran.css" rel="stylesheet"/>
+  <link href="/lib/bootstrap/css/bootstrap.css" rel="stylesheet"/>
+  <link href="/fonts/MaterialDesign-Webfont-master/css/materialdesignicons.css" rel="stylesheet"/>
+  <link href="/css/style.min.css" rel="stylesheet"/>
+  <link href="/lib/simple-keyboard/index.css" rel="stylesheet"/>
+  <script src="/js/scripts.min.js">
+  </script>
+ </head>
+ <body>
+  <div class="BG">
+   <div class="container">
+    <div class="organizer">
+     <div class="row row-styled">
+      <!----------right-side---------->
+      <div class="col-xl-5 col-lg-6 col-md-6 col-sm-8 mx-sm-auto right-col">
+       <div class="main-section">
+        <div class="sections">
+         <div class="header border-bottom">
+          <img height="45" src="/images/logo/bull-Only-color.svg"/>
+          <h6 class="title" onclick="$('form').trigger('submit');">
+           ورود
+          </h6>
+         </div>
+         <form action="/Login" id="primary_form" method="post">
+          <fieldset>
+           <div class="form-group mb-2">
+            <label class="label" for="Username">
+             شماره همراه / کدملی / نام کاربری
+            </label>
+            <div class="passwordField">
+             <input autocomplete="off" autofocus="" class="input-box placeHolder form-control ltr input_vk_1" data-val="true" data-val-regex="اطلاعات وارد شده قابل قبول نیست." data-val-regex-pattern="[a-zA-Z0-9.\-_@]{6,32}" data-val-required="شماره همراه / کدملی / نام کاربری را وارد کنید." id="Username" name="Username" style="padding-left: 40px;" tabindex="1" type="text" value=""/>
+             <span class="eye-icon">
+              <i class="mdi mdi-18px mdi-keyboard hand" onclick="toggleKeyboard(event, 'input_vk_1', 32)">
+              </i>
+             </span>
+            </div>
+            <span class="field-validation-valid" data-valmsg-for="Username" data-valmsg-replace="true">
+            </span>
+            <div class="vr-keyboard-section" id="input_vk_1_con">
+             <div class="simple-keyboard-con">
+              <div class="simple-keyboard">
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="form-group mb-2">
+            <label class="label" for="Password">
+             رمز عبور
+            </label>
+            <div class="passwordField">
+             <input autocomplete="off" class="input-box ltr input_vk_2" data-val="true" data-val-required="رمز عبور را وارد کنید." id="Password" name="Password" style="padding-left: 60px;" tabindex="2" type="password"/>
+             <span class="eye-icon">
+              <i class="mdi mdi-18px mdi-eye hand" onclick="showPassword(event, 'Password')">
+              </i>
+              <i class="mdi mdi-18px mdi-keyboard hand" onclick="toggleKeyboard(event, 'input_vk_2', 64)">
+              </i>
+             </span>
+            </div>
+            <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true">
+            </span>
+            <div class="vr-keyboard-section" id="input_vk_2_con">
+            </div>
+            <div class="text-left mt-1">
+             <a class="footer-link" href="/ForgotPassword" tabindex="3">
+              رمز عبور خود را فراموش کرده‌ام
+             </a>
+            </div>
+           </div>
+           <div class="btn-class">
+            <input id="button" name="button" type="hidden"/>
+            <button class="btn-primary" id="submit_btn" tabindex="5">
+             ورود
+             <div class="loading" style="display: none;">
+             </div>
+            </button>
+           </div>
+          </fieldset>
+          <input name="__RequestVerificationToken" type="hidden" value="CfDJ8Eo_qQMq-91Glh9_bBj6hIstFa2j3hhXLpnyKtLk6F1YkuTLB6jJ4fD0HdSOEpeYYhospS703WmV8_l91nyw6Z8-9R9FUF4Ky7MclELYc-pvhGSDtvuOy-DHIiiybDLJo2AYVJhM8IhNdWWJAZrIw20"/>
+         </form>
+        </div>
+       </div>
+       <div class="btn-class py-4">
+        <a class="btn-secondary" href="/Register" tabindex="6">
+         ایجاد حساب
+         <div class="loading" style="display: none;">
+         </div>
+        </a>
+       </div>
+       <div class="security-rules d-block d-lg-none">
+        <div class="text-right">
+         <p class="h6 mb-2">
+          نکات امنیتی
+         </p>
+         <ul>
+          <li>
+           سایت کارگزاری مفید با استفاده از پروتکل امن SSL به مشتریان خود ارائه خدمت نموده و با آدرس https://account.emofid.com شروع می شود.
+          </li>
+          <li>
+           لطفا پیش از ورود هرگونه اطلاعات، آدرس موجود در بخش مرورگر وب خود را با آدرس فوق مقایسه نمایید و درصورت مشاهده هر نوع مغایرت احتمالی، از ادامه کار منصرف شده و موضوع را با ما در میان بگذارید.
+          </li>
+          <li>
+           برای حفاظت از اطلاعات حساب کاربری خود، حتی المقدور از صفحه کلید مجازی استفاده نمایید.
+          </li>
+          <li>
+           هرگز اطلاعات حساب کاربری (نام کاربری و رمز عبور) خود را در اختیار دیگران قرار ندهید.
+          </li>
+          <li>
+           پس از اتمام کار با سامانه، حتما بر روی دکمه خروج از سامانه کلیک نمایید.
+          </li>
+          <li>
+           <a href="https://learning.emofid.com/%d8%b1%d9%88%db%8c%d9%87-%d8%a7%d8%b1%d8%a7%d8%a6%d9%87-%d8%ae%d8%af%d9%85%d8%a7%d8%aa-%d9%88-%d8%a7%d9%86%d8%ac%d8%a7%d9%85-%d9%85%d8%b9%d8%a7%d9%85%d9%84%d8%a7%d8%aa-%d8%a8%d8%b1%d8%ae%d8%b7/">
+            <u>
+             رویه ارائه خدمات و انجام معاملات برخط
+            </u>
+           </a>
+           کارگزاری مفید را مطالعه نمایید.
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <!----------left-side---------->
+      <div class="col-xl-7 col-lg-6 col-md-6 left-col">
+       <div class="BG-in align-items-end">
+        <div class="security-rules">
+         <img alt="کارگزاری مفید" src="/images/logo/steadyProgress.svg"/>
+         <div class="text-right">
+          <p class="h6 mb-2">
+           نکات امنیتی
+          </p>
+          <ul>
+           <li>
+            سایت کارگزاری مفید با استفاده از پروتکل امن SSL به مشتریان خود ارائه خدمت نموده و با آدرس https://account.emofid.com شروع می شود.
+           </li>
+           <li>
+            لطفا پیش از ورود هرگونه اطلاعات، آدرس موجود در بخش مرورگر وب خود را با آدرس فوق مقایسه نمایید و درصورت مشاهده هر نوع مغایرت احتمالی، از ادامه کار منصرف شده و موضوع را با ما در میان بگذارید.
+           </li>
+           <li>
+            برای حفاظت از اطلاعات حساب کاربری خود، حتی المقدور از صفحه کلید مجازی استفاده نمایید.
+           </li>
+           <li>
+            هرگز اطلاعات حساب کاربری (نام کاربری و رمز عبور) خود را در اختیار دیگران قرار ندهید.
+           </li>
+           <li>
+            پس از اتمام کار با سامانه، حتما بر روی دکمه خروج از سامانه کلیک نمایید.
+           </li>
+           <li>
+            <a href="https://learning.emofid.com/%d8%b1%d9%88%db%8c%d9%87-%d8%a7%d8%b1%d8%a7%d8%a6%d9%87-%d8%ae%d8%af%d9%85%d8%a7%d8%aa-%d9%88-%d8%a7%d9%86%d8%ac%d8%a7%d9%85-%d9%85%d8%b9%d8%a7%d9%85%d9%84%d8%a7%d8%aa-%d8%a8%d8%b1%d8%ae%d8%b7/">
+             <u>
+              رویه ارائه خدمات و انجام معاملات برخط
+             </u>
+            </a>
+            کارگزاری مفید را مطالعه نمایید.
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script src="/lib/jquery-validation/jquery.validate.min.js">
+  </script>
+  <script src="/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js">
+  </script>
+  <script src="/lib/jquery.unobtrusive-ajax/jquery.unobtrusive-ajax.min.js">
+  </script>
+  <script>
+   $(function () {
+            $('#primary_form').submit(() => {
+                if ($('#primary_form').valid()) {
+                    $('#button').val('login');
+                    submitBegin('submit_btn');
+                }
+            });
+        });
+  </script>
+  <script type="text/javascript">
+   let Keyboard = window.SimpleKeyboard.default;
+    let keyboard;
+    let currentInputClass;
+
+    function setOptions() {
+        keyboard.setOptions({
+            layout: {
+                default: [
+                    "q w e r t y u i o p",
+                    "a s d f g h j k l {backspace}",
+                    "{shift} z x c v b n m",
+                    "{numbers} {space} {spchars}"
+                ],
+                shift: [
+                    "Q W E R T Y U I O P",
+                    "A S D F G H J K L {backspace}",
+                    "{shift} Z X C V B N M",
+                    "{numbers} {space} {spchars}"
+                ],
+                numbers: ["1 2 3", "4 5 6", "7 8 9", "{abc} 0 {backspace}"],
+                spchars: [
+                    '! @ # $ % ^ & * ( ) _ +',
+                    '~ - = ` \' " [ ] { }',
+                    '< > ? | \\ / : ; , .',
+                    '{numbers} {space} {abc}'
+                ]
+            },
+            display: {
+                "{numbers}": "123",
+                "{escape}": "esc ⎋",
+                "{tab}": "tab ⇥",
+                "{backspace}": "⌫",
+                "{capslock}": "caps lock ⇪",
+                "{shift}": "⇧",
+                "{controlleft}": "ctrl ⌃",
+                "{controlright}": "ctrl ⌃",
+                "{altleft}": "alt ⌥",
+                "{altright}": "alt ⌥",
+                "{metaleft}": "cmd ⌘",
+                "{metaright}": "cmd ⌘",
+                "{abc}": "abc",
+                "{space}": "␣",
+                "{ent}": "↵",
+                "{spchars}": "#@$"
+            }
+        });
+    }
+
+    let selectedElem;
+
+    function onChange(input) {
+        selectedElem.value = input;
+    }
+
+    function onKeyPress(button) {
+        if (button === '{clear}') {
+            keyboard.setInput('');
+            selectedElem.value = '';
+            return;
+        }
+        let currentLayout = keyboard.options.layoutName;
+        if (currentLayout === 'numeric') {
+            return;
+        }
+        if (button === "{shift}") {
+            handleShift();
+        }
+        if (button === "{numbers}") {
+            handleNumbers();
+        }
+        if (button === "{abc}") {
+            handleAbc();
+        }
+        if (button === "{spchars}") {
+            handleSpecialChars();
+        }
+    }
+
+    function handleShift() {
+        let currentLayout = keyboard.options.layoutName;
+        let shiftToggle = currentLayout === "default" ? "shift" : "default";
+
+        keyboard.setOptions({
+            layoutName: shiftToggle
+        });
+    }
+
+    function handleNumbers() {
+        let currentLayout = keyboard.options.layoutName;
+        let numbersToggle = currentLayout !== "numbers" ? "numbers" : "default";
+
+        keyboard.setOptions({
+            layoutName: numbersToggle
+        });
+    }
+
+    function handleAbc() {
+        keyboard.setOptions({
+            layoutName: "default"
+        });
+    }
+
+    function handleSpecialChars() {
+        let currentLayout = keyboard.options.layoutName;
+        let spCharsToggle = currentLayout !== "spchars" ? "spchars" : "default";
+
+        keyboard.setOptions({
+            layoutName: spCharsToggle
+        });
+    }
+
+    function toggleKeyboard(e, inputElemClassName, maxLength) {
+
+        for (let item of document.getElementsByClassName('vr-keyboard-section')) {
+            item.innerHTML = '';
+        }
+        document.getElementById(inputElemClassName + "_con").innerHTML = '<div class="simple-keyboard-con"><div class="simple-keyboard"></div></div>';
+
+        if (selectedElem) {
+            selectedElem.removeEventListener('input', () => { });
+        }
+        if (currentInputClass === inputElemClassName) {
+            currentInputClass = '';
+        }
+        else {
+            currentInputClass = inputElemClassName;
+
+            keyboard = new Keyboard({
+                onChange: input => onChange(input),
+                onKeyPress: button => onKeyPress(button)
+            });
+            setOptions();
+            keyboard.setOptions({
+                maxLength: maxLength
+            });
+
+            selectedElem = document.querySelector(`.${inputElemClassName}`);
+            keyboard.setInput(selectedElem.value);
+            selectedElem.addEventListener("input", event => {
+                keyboard.setInput(event.target.value);
+            });
+        }
+
+        let keyboardConElem = document.querySelector('.simple-keyboard-con');
+        if (e.target.classList.contains('mdi')) {
+            if (e.target.classList.contains('mdi-keyboard')) {
+                document.querySelectorAll('.mdi-keyboard-off').forEach(e => {
+                    e.classList.remove('mdi-keyboard-off');
+                    e.classList.add('mdi-keyboard');
+                });
+                keyboardConElem.style.display = 'block';
+                e.target.classList.add('mdi-keyboard-off');
+                e.target.classList.remove('mdi-keyboard');
+            }
+            else {
+                keyboardConElem.style.display = 'none';
+                e.target.classList.add('mdi-keyboard');
+                e.target.classList.remove('mdi-keyboard-off');
+            }
+        }
+        else {
+            let child = e.target.children[0];
+            if (child) {
+                if (child.classList.contains('mdi-keyboard')) {
+                    child.classList.add('mdi-keyboard-off');
+                    child.classList.remove('mdi-keyboard');
+                }
+                else {
+                    child.classList.add('mdi-keyboard');
+                    child.classList.remove('mdi-keyboard-off');
+                }
+            }
+        }
+    }
+  </script>
+  <label style="color: white">
+  </label>
+ </body>
+</html>

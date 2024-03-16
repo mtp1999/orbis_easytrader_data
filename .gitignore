@@ -1,0 +1,7 @@
+*secret*
+venv/
+.venv/
+env/
+.env/
+*pycache*
+.idea/
